@@ -7,7 +7,7 @@ struct Node {
     struct Node* right;
 };
 
-// Function to create a new node
+// New node
 struct Node* newNode(int data) {
     struct Node* node = (struct Node*)malloc(sizeof(struct Node));
     node->data = data;
@@ -15,7 +15,7 @@ struct Node* newNode(int data) {
     return node;
 }
 
-// Function to insert a node in BST
+// Insert node
 struct Node* insert(struct Node* root, int data) {
     if (root == NULL) return newNode(data);
     if (data < root->data)
@@ -25,7 +25,7 @@ struct Node* insert(struct Node* root, int data) {
     return root;
 }
 
-// Function to find height of BST
+// Find height
 int findHeight(struct Node* root) {
     if (root == NULL) return -1;
     int leftHeight = findHeight(root->left);

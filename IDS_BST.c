@@ -82,12 +82,12 @@ int main() {
     inorder(root);
     printf("\n");
 
-    printf("Search 40: %s\n", search(root, 40) ? "Found" : "Not Found");
-    printf("Search 90: %s\n", search(root, 90) ? "Found" : "Not Found");
+    printf("Search 40: %s\n", search(root, 40) ? "Element Found" : "Element Not Found");
+    printf("Search 90: %s\n", search(root, 90) ? "Element Found" : "Element Not Found");
 
-    root = delete(root, 20);
-    root = delete(root, 30);
     root = delete(root, 50);
+    root = delete(root, 30);
+    root = delete(root, 80);
 
     printf("Inorder after deletions: ");
     inorder(root);

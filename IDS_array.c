@@ -56,13 +56,15 @@ int main() {
     insert(&arr, 10);
     insert(&arr, 20);
     insert(&arr, 30);
+    insert(&arr, 50);
+    insert(&arr, 60);
     display(&arr);
 
     delete(&arr, 20);
     display(&arr);
 
-    printf("Search 10: %s\n", search(&arr, 10) ? "Found" : "Not Found");
-    printf("Search 40: %s\n", search(&arr, 40) ? "Found" : "Not Found");
+    printf("Search 10: %s\n", search(&arr, 10) ? "Element Found" : "Element Not Found");
+    printf("Search 40: %s\n", search(&arr, 40) ? "Element Found" : "Element Not Found");
 
     return 0;
 }

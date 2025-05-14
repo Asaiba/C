@@ -25,9 +25,9 @@ void printLeafNodes(struct Node* root) {
 }
 
 int main() {
-    struct Node* root = newNode(20);
-    root->left = newNode(10);
-    root->right = newNode(30);
+    struct Node* root = newNode(30);
+    root->left = newNode(20);
+    root->right = newNode(40);
     root->left->left = newNode(5);
     root->left->right = newNode(15);
 
